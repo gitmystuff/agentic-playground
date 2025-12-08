@@ -770,6 +770,10 @@ Each call costs ~$0.00001. Feel free to explore!
 **Q: Can I use the free tier for everything?**  
 **A:** OpenAI's free tier has strict rate limits (3 RPM). You may need to upgrade for larger projects.
 
+**Q: Is there an alternative to OpenAI's free tier**  
+**A:** Yes, you can use OpenRouter for better free access. Check out our instructions on how to get your free API key here: [OpenRouter More Info](https://github.com/gitmystuff/agentic-playground/blob/main/files/OpenRouter.md)
+
+
 ---
 
 **Lab Complete! 🎉**
