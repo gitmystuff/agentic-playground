@@ -37,7 +37,7 @@ By default, uv is installed to a path like ~/.cargo/bin on Unix-like systems, wh
 **Note:** After running the installation script, you may need to close and reopen your Command Prompt/PowerShell/Terminal or run a command like source ~/.bashrc (if applicable) for the uv command to be recognized globally.
 
 #### On Windows (PowerShell) 
-* powershell -c "irm https://astral.sh/uv/install.ps1 | iex" 
+* powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
 
 #### On Mac/Linux
 * curl -LsSf https://astral.sh/uv/install.sh | sh
