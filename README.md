@@ -2,6 +2,8 @@
 <img src="https://github.com/gitmystuff/agentic-playground/blob/main/files/playground01.jpg?raw=True" alt="agentic playground"/>
 </div>
 
+Maintained by Hoang Ky Nguyen
+
 ### Prerequisites - Install Required Software
 
 * Open Command Prompt or PowerShell
