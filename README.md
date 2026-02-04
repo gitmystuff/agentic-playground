@@ -98,6 +98,56 @@ This command uses the **`uv`** package manager to synchronize your project's dep
 
 #### 5\. Uv will now install everything (may take a while)
 
+### Activating the Environment
+
+In VS Code, "activating" an environment usually means two things: making sure your terminal recognizes the environment and ensuring the Python extension is using the correct interpreter for IntelliSense and linting.
+
+Since `uv` creates a standard virtual environment in a folder named `.venv` by default, here is the best way to handle it:
+
+### 1. Let VS Code Handle it (Recommended)
+
+VS Code can automatically detect and "activate" the environment for you every time you open a terminal.
+
+1. Open the **Command Palette** (**Ctrl + Shift + P**).
+2. Type **"Python: Select Interpreter"**.
+3. Look for the entry that points to `./.venv/Scripts/python.exe`. It will usually be labeled with **('venv')**.
+4. Once selected, **kill your current terminal** (click the trash can icon) and open a new one (**Ctrl + Shift + `**).
+
+VS Code will now automatically run the activation script for you every time you open that terminal.
+
+---
+
+### 2. Manual Activation
+
+If you prefer to do it yourself via the command line, run the activation script based on your terminal type:
+
+| Terminal Type | Command |
+| --- | --- |
+| **PowerShell** | `.venv\Scripts\activate.ps1` |
+| **Command Prompt (cmd)** | `.venv\Scripts\activate.bat` |
+| **Git Bash / Zsh** | `source .venv/Scripts/activate` |
+
+---
+
+### 3. The `uv run` Way (Modern Approach)
+
+One of the best features of `uv` is that you don't actually *need* to activate the environment to run scripts. You can let `uv` handle the context for you:
+
+```powershell
+uv run my_script.py
+
+```
+
+This command automatically finds the `.venv`, ensures it is up to date, and runs your code inside it without you ever needing to type "activate."
+
+---
+
+### Pro Tip: The `.python-version` file
+
+If you run `uv venv`, `uv` creates a `.python-version` file in your project root. VS Code reads this file to automatically suggest the correct interpreter, saving you from having to hunt for it in the settings.
+
+**Is VS Code successfully showing the "(.venv)" indicator in your terminal prompt now?**
+
 ### Install CrewAI
 
 * Run uv tool install crewai (Note: CrewAI requires Python versions greater than or equal to 3.12 and strictly less than 3.13)
