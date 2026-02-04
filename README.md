@@ -104,7 +104,7 @@ In VS Code, "activating" an environment usually means two things: making sure yo
 
 Since `uv` creates a standard virtual environment in a folder named `.venv` by default, here is the best way to handle it:
 
-### 1. Let VS Code Handle it (Recommended)
+#### 1. Let VS Code Handle it (Recommended)
 
 VS Code can automatically detect and "activate" the environment for you every time you open a terminal.
 
@@ -117,7 +117,7 @@ VS Code will now automatically run the activation script for you every time you 
 
 ---
 
-### 2. Manual Activation
+#### 2. Manual Activation
 
 If you prefer to do it yourself via the command line, run the activation script based on your terminal type:
 
@@ -129,7 +129,7 @@ If you prefer to do it yourself via the command line, run the activation script 
 
 ---
 
-### 3. The `uv run` Way (Modern Approach)
+#### 3. The `uv run` Way (Modern Approach)
 
 One of the best features of `uv` is that you don't actually *need* to activate the environment to run scripts. You can let `uv` handle the context for you:
 
@@ -142,7 +142,7 @@ This command automatically finds the `.venv`, ensures it is up to date, and runs
 
 ---
 
-### Pro Tip: The `.python-version` file
+#### Pro Tip: The `.python-version` file
 
 If you run `uv venv`, `uv` creates a `.python-version` file in your project root. VS Code reads this file to automatically suggest the correct interpreter, saving you from having to hunt for it in the settings.
 
