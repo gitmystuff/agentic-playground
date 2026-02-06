@@ -41,5 +41,5 @@ The solution recently arrived via Ollama, which now supports the Anthropic Messa
 #### Originality Check
 * If you are building a project around Claude Code, the "standard" use case is just using it to write code faster.
 * How to make your Claude Code project more original:
-* MCP Integration: Use the Model Context Protocol (MCP) to give Claude access to your Jira tickets, Google Drive docs, or Slack. Instead of just coding, Claude can now "Update the Jira ticket \#402 with the results of the refactor I just did."
-* TDD Agent: Configure CC to strictly follow Test-Driven Development. Tell it: "You are not allowed to commit code until you have written a failing test and then made it pass."
+    * MCP Integration: Use the Model Context Protocol (MCP) to give Claude access to your Jira tickets, Google Drive docs, or Slack. Instead of just coding, Claude can now "Update the Jira ticket \#402 with the results of the refactor I just did."
+    * TDD Agent: Configure CC to strictly follow Test-Driven Development. Tell it: "You are not allowed to commit code until you have written a failing test and then made it pass."
