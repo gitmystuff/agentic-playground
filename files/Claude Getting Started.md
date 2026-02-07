@@ -7,6 +7,7 @@ The solution recently arrived via Ollama, which now supports the Anthropic Messa
 ## Installation
 
 * In PowerShell irm https://claude.ai/install.ps1 | iex
+* Add Claude Code for VS Code extension in VSCode
 
 ## Ollama
 
@@ -19,7 +20,7 @@ The solution recently arrived via Ollama, which now supports the Anthropic Messa
 * PS C:\Users\XXX> $env:ANTHROPIC_AUTH_TOKEN = "ollama"
 * PS C:\Users\XXX> $env:ANTHROPIC_API_KEY = ""
 * PS C:\Users\XXX> $env:ANTHROPIC_BASE_URL = "http://localhost:11434"
-* PS C:\Users\XXX> claude --model gpt-oss:20b
+* VSCODE C:\Users\XXX> claude --model gpt-oss:20b (maybe in Power Shell first)
 * Ctr d to quit
 
 ## Teach Me Claude Code
